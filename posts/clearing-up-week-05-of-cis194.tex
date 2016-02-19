@@ -33,7 +33,7 @@ pdf}, but there isn't THAT much material in the lecture. So here is a
 bit of clarification on everything mostly just for my own edification.
 Any benefit you derive is just a side-effect (hah, puns!).
 
-\subsection{Why I was confused}\label{why-i-was-confused}
+\section{Why I was confused}\label{why-i-was-confused}
 
 In my mind, there were four things and four pieces of syntax.
 
@@ -73,13 +73,13 @@ CIS194 week 05):
   \end{itemize}
 \end{itemize}
 
-\subsection{How I cleared everything
+\section{How I cleared everything
 up}\label{how-i-cleared-everything-up}
 
 This is how things match up with their syntax (along with an explanation
 of the order things generally are used):
 
-\subsubsection{Type and Data}
+\subsection{Data}
 
 \begin{itemize}
 \tightlist
@@ -97,6 +97,8 @@ data MyMaybeInteger = J Integer | N
 --N for Nothing 
 \end{lstlisting}
 
+\subsection{Class}
+
 \begin{itemize}
 \tightlist
 \item
@@ -113,6 +115,8 @@ class MyEq a where
   equal :: a -> a -> Bool 
   notEqual :: a -> a -> Bool 
 \end{lstlisting}
+
+\subsection{Instance}
 
 \begin{itemize}
 \tightlist
@@ -133,6 +137,8 @@ instance MyEq MyMaybeInteger where
   notEqual a b = not (equal a b) 
 \end{lstlisting}
 
+\subsection{Type}
+
 \begin{itemize}
 \tightlist
 \item
@@ -147,7 +153,7 @@ type synonyms.
 type MyInteger = Integer 
 \end{lstlisting}
 
-\subsection{Conclusion}\label{conclusion}
+\section{Conclusion}\label{conclusion}
 
 So there you have it, a bit more clarification on Week 05 of CIS194. It
 will definitely take me a while to wrap my head around Haskell's type
@@ -157,7 +163,7 @@ check out the \href{https://github.com/2016rshah/CIS194}{github repo}
 and \href{https://github.com/2016rshah/CIS194/tree/master/05}{week 05
 specifically}.
 
-\subsection{\texorpdfstring{Post Note:
+\section{\texorpdfstring{Post Note:
 \texttt{newtype}}{Post Note: newtype}}\label{post-note-newtype}
 
 It's been a while since I originally wrote this post, but it has come to
