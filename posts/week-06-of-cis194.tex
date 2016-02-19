@@ -6,7 +6,7 @@
 }
 
 \usepackage{graphicx}
-\graphicspath{ {../../resources/} }
+\graphicspath{ {resources/week-06-of-cis194/} }
 
 \usepackage[margin=1in]{geometry}
 
@@ -19,16 +19,10 @@
 \begin{document}
 
 	\maketitle
-	Ahh, the Fibonacci numbers. What mathemetician doesn't love them?
 
-	Well, in Week 06 of CIS194, some interesting implementations were
-	discussed. My favorite (that I never actually had encountered before),
-	was in order to get the \texttt{n}'th number, you raise a two by two
-	matrix to the \texttt{n}'th power.
+	Ahh, the Fibonacci numbers. What mathemetician doesn't love them? Well, in Week 06 of CIS194, some interesting implementations were discussed. My favorite (that I never actually had encountered before), was in order to get the \texttt{n}'th number, you raise a two by two matrix to the \texttt{n}'th power. Let's take a look at my implementation:
 
-	Let's take a look at my implementation:
-
-	\subsection{The Matrix}\label{the-matrix}
+	\section{The Matrix}\label{the-matrix}
 
 	First off, you need to be able to represent matrices. I decided to use a
 	tuple of tuples for the two by two matrix.
@@ -40,8 +34,7 @@ data Matrix = 	Matrix ((Integer, Integer),
 
 	I also wanted to be able to print them nicely in the terminal, so I
 	whipped up a quick show function. I could have derived it, but in my
-	opinion, this makes it look slightly nicer (sorry, the function is a bit
-	long, so the text wraps).
+	opinion, this makes it look slightly nicer.
 
 	\begin{lstlisting}
 instance Show Matrix where 
@@ -65,7 +58,7 @@ m = Matrix ((1, 1), (1, 0))
 [1, 0] 
 	\end{lstlisting}
 
-	\subsection{Multiplying Matrices}\label{multiplying-matrices}
+	\section{Multiplying Matrices}\label{multiplying-matrices}
 
 	So that's great, but these matrices don't really do much. We need to be
 	able to raise each matrix to a specific power, but who knows how to do
@@ -87,7 +80,7 @@ instance Num Matrix where
 	You can raise any instance of \texttt{Num} to a power after defining the
 	multiplication operator, so Haskell will take care of the rest.
 
-	\subsection{Quick helper function}\label{quick-helper-function}
+	\section{Quick helper function}\label{quick-helper-function}
 
 	The last element of a matrix will represent the Fibonacci number you're
 	looking for. So let's whip up a quick function to get that element.
@@ -97,7 +90,7 @@ l :: Matrix -> Integer
 l (Matrix m) = (snd . snd) m 
 	\end{lstlisting}
 
-	\subsection{Finally, the Fibonacci
+	\section{Finally, the Fibonacci
 	Function!}\label{finally-the-fibonacci-function}
 
 	In CIS194, this is the fourth version of the function, so it is named
@@ -113,7 +106,7 @@ fib4 0 = 0
 fib4 n = l (f^n) 
 	\end{lstlisting}
 
-	\subsection{Conclusion}\label{conclusion}
+	\section{Conclusion}\label{conclusion}
 
 	To conclude, let's try it out!
 
