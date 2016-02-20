@@ -1,58 +1,65 @@
-<html>
-<head>
-  <title>Rushi Shah</title>
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://www.rshah.org/blog/ -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
 
-  <!-- Mobile Specific Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <!-- FONTS -->
-  <link href="http://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet" type="text/css">
+  <title>
+    
+      Rushi Shah · ¯\_(ツ)_/¯
+    
+  </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="./index_files/poole.css">
+  <link rel="stylesheet" href="./index_files/syntax.css">
+  <link rel="stylesheet" href="./index_files/hyde.css">
+  <link rel="stylesheet" href="./index_files/custom.css">
+  <link rel="stylesheet" href="./index_files/css">
 
+  <!-- Icons -->
+  <link rel="shortcut icon" href="http://faviconist.com/icons/8a0022d6f79f13dd0154d6a91c10fba7/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.rshah.org/atom.xml">
 </head>
-<body>
 
-  <!-- Primary Page Layout -->
-  <div class="container">
-    <section class="header">
-      <img class="prof-pic" src="http://www.rshah.org/public/prof-pic.jpg"></img>
-      <h1 class="title fancy-font">Rushi Shah</h1>
-      <p>Java, Python, JavaScript, Ruby, and Haskell enthusiast.</p>
-      <div class="row mobile-links">
-        <div class="six columns value-prop">
-          <h3 class="fancy-font"><a href="https://github.com/2016rshah">Github</a></h3>
-        </div>
-        <div class="six columns value-prop">
-          <h3 class="fancy-font"><a href="http://twitter.com/2016rshah">Twitter</a></h3>
-        </div>
-      </div>
-      <div class="navbar-spacer"></div>
-      <nav id="navbar" class="navbar">
-        <div class="container">
-          <div class="row links">
-            <div id="link" class="six columns value-prop link-2">
-              <h4 class="fancy-font"><a href="https://github.com/2016rshah">Github</a></h4>
-            </div>
-            <div id="link" class="six columns value-prop link-3">
-              <h4 class="fancy-font"><a href="http://twitter.com/2016rshah">Twitter</a></h4>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </section>
 
-    <!-- Blog Posts  -->
-    <div class="section intro">
-      <ul id="blog-posts"></ul>
+  <body class=" layout-reverse" cz-shortcut-listen="true">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      
+      <img class="prof-pic" src="./index_files/prof-pic2.jpg">
+      <h1 class="site-title">
+        <a href="http://www.rshah.org/blog/">
+          Rushi Shah
+        </a>
+      </h1>
+      <p class="lead">Java, Python, JavaScript, Ruby, and Haskell enthusiast.</p>
     </div>
 
-    <footer>
-      Powered by <a href="https://github.com/2016rshah/BlaTeX">BlaTeX.</a>
-    </footer>
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="http://www.rshah.org/blog/">Blog Home</a>
+      <a class="sidebar-nav-item" href="http://www.rshah.org/">About</a>
+      <a class="sidebar-nav-item" href="https://twitter.com/2016rshah">Twitter</a>
+      <a class="sidebar-nav-item" href="https://github.com/2016rshah">GitHub</a>
+    </nav>
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="posts">
+        <ul id="blog-posts"></ul>
+      </div>
+    </div>
+
 
 </body>
 </html>
