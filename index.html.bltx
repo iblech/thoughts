@@ -58,6 +58,9 @@
       <div class="posts">
         <ul id="blog-posts"></ul>
       </div>
+      <footer>   
+      Powered by <a href="https://github.com/2016rshah/BlaTeX">BlaTeX</a>.    
+      </footer>
     </div>
 
 
