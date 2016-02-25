@@ -1,9 +1,6 @@
 \documentclass[12pt]{article}
 
-\usepackage{listings}
-\lstset{
-  language=Haskell
-}
+\usepackage{minted}
 
 \usepackage{graphicx}
 \graphicspath{ {../resources/week-06-of-cis194/} }
@@ -94,11 +91,11 @@ of the order things generally are used):
   \end{itemize}
 \end{itemize}
 
-\begin{lstlisting} 
+\begin{minted}{haskell}
 data MyMaybeInteger = J Integer | N
 --J for Just 
 --N for Nothing 
-\end{lstlisting}
+\end{minted}
 
 \subsection{Class}
 
@@ -113,11 +110,11 @@ data MyMaybeInteger = J Integer | N
   \end{itemize}
 \end{itemize}
 
-\begin{lstlisting} 
+\begin{minted}{haskell}
 class MyEq a where 
   equal :: a -> a -> Bool 
   notEqual :: a -> a -> Bool 
-\end{lstlisting}
+\end{minted}
 
 \subsection{Instance}
 
@@ -131,14 +128,14 @@ class MyEq a where
   \end{itemize}
 \end{itemize}
 
-\begin{lstlisting} 
+\begin{minted}{haskell} 
 --Read as ``an instance of MyEq is MyMaybeInteger'' 
 instance MyEq MyMaybeInteger where 
   equal N N = True
   equal (J a) (J b) = a == b 
   equal _ _ = False 
   notEqual a b = not (equal a b) 
-\end{lstlisting}
+\end{minted}
 
 \subsection{Type}
 
@@ -152,9 +149,9 @@ I guess what really got me mixed up was that to define a new type, you
 use the \texttt{data} syntax, and the \texttt{type} syntax is just for
 type synonyms.
 
-\begin{lstlisting} 
+\begin{minted}{haskell} 
 type MyInteger = Integer 
-\end{lstlisting}
+\end{minted}
 
 \section{Conclusion}\label{conclusion}
 
