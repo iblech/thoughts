@@ -92,7 +92,7 @@ instance Applicative Two where
 
   \begin{minted}{haskell}
 factorOutTwo :: Two String -> Two String -> Two String 
-factorOutTwo a b = (\x y -> (x ++ "+" ++ y)) 'fmap' a <*> b
+factorOutTwo a b = (\x y -> (x ++ "+" ++ y)) `fmap` a <*> b
 --factorOutTwo (Two "x") (Two "y") -> Two "x+y"
   \end{minted}
   %factorOutTwo = liftA2 (\x y -> (x ++ "+" ++ y))
